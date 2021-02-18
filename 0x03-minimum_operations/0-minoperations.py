@@ -9,7 +9,8 @@ def minOperations(n):
         return 0
 
     nums = []
-    for i in range(3, n + 1):
+    i = 2
+    while i <= n:
         if n % i == 0:
             nums.append(i)
             n = n / i
